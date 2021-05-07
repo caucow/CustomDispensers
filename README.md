@@ -48,10 +48,10 @@ Valid variable arguments for actions include:
   <BR><BR>
 - `$block.dispenser` - the dispenser block itself
 - `$block.filter.<N>` - similar to `$item.filter`, without a second argument
-- `$block.action.<N>` - similar to `$item.last`, without a second argument
+- `$block.action.<N>` - similar to `$item.action`, without a second argument
   <BR><BR>
 - `$entity.filter.<N>` - similar to `$item.filter`, without a second argument
-- `$entity.action.<N>` - similar to `$item.last`, without a second argument
+- `$entity.action.<N>` - similar to `$item.action`, without a second argument
 
 Non-variable items (in the `items` section) are referenced by name.
 
