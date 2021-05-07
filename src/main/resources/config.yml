@@ -1,0 +1,34 @@
+recipes:
+  - dispenser:
+      type: DISPENSER
+    drop-item: waterbucket
+    cancel-event: true
+    filters:
+      - filter: target_block
+        block-data: "minecraft:cauldron"
+    actions:
+      - consume_item $item.dispenser 1
+      - set_block $block.filter.0 minecraft:cauldron[level=3]
+      - add_item bucket
+      - play_sound ITEM_BUCKET_EMPTY 1.0 0.125
+  - dispenser:
+      type: DISPENSER
+    drop-item: bucket
+    cancel-event: true
+    filters:
+      - filter: target_block
+        block-data: "minecraft:cauldron[level=3]"
+    actions:
+      - consume_item $item.dispenser 1
+      - set_block $block.filter.0 minecraft:cauldron[level=0]
+      - add_item waterbucket
+      - play_sound ITEM_BUCKET_FILL 1.0 0.125
+items:
+  bucket:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2566
+    type: BUCKET
+  waterbucket:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2566
+    type: WATER_BUCKET

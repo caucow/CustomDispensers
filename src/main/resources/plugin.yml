@@ -1,0 +1,19 @@
+name: CustomDispensers
+version: ${project.version}
+main: com.caucraft.customdispensers.CustomDispensers
+api-version: 1.16
+authors: [ caucow ]
+commands:
+  customdispensers:
+    aliases:
+      - cstmdspr
+      - cd
+    description: "Reloads the plugin configuration"
+    permission: customdispensers.command.customdispensers
+    usage: /customdispensers reload
+  itemyaml:
+    aliases:
+      - iyaml
+      - iy
+    description: "Prints a held item in serialized YAML form"
+    permission: customdispensers.command.itemyaml
