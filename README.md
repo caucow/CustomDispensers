@@ -13,6 +13,7 @@ the dispensed item using the `consume_item` action.
   item. I want add the ability to use an NBT matcher, so rather than being forced to use an exact item, only some tags
   in the item will need to match. This will be useful in `break_block` and `attack_entity` actions so damaged pickaxes
   or swords can be used.
+- `place_block` - An action that lets you place blocks. Will need some kind of magical filtering thing or something idk
 
 ## Commands
 
@@ -96,7 +97,7 @@ will be used - sort your recipes accordingly. Each recipe contains:
     <BR><BR>
   - `filter: target_entity` - Describes an entity that must be somewhere near the dispenser.
   - `entity-type` - The entity's EntityType, or the name of one of its Bukkit
-    [Entity interfaces](https://papermc.io/javadocs/paper/1.16/index.html?overview-summary.html)
+    [Entity interfaces](https://papermc.io/javadocs/paper/1.16/org/bukkit/entity/Entity.html)
   - `distance` - Same as target_block.
   - `exact` - Same as target_block.
   - `direct` - Same as target_block.
@@ -128,10 +129,10 @@ will be used - sort your recipes accordingly. Each recipe contains:
   - ~~.`attack_entity <entity> <item>` - Attacks the target entity using the given item.~~ (Coming soon)
   - `play_sound <sound> <pitch> [<pitch variance>]` - Plays the given sound with the given pitch, optionally with extra
     pitch variance. Sound names can be found in the
-    [Sound Javadoc](https://papermc.io/javadocs/paper/1.16/index.html?overview-summary.html)
+    [Sound Javadoc](https://papermc.io/javadocs/paper/1.16/org/bukkit/Sound.html)
   - `particle <particle> [<speed> <variance>] [<amount>] [block|entity <block|entity>]` - Spawns particles, optionally
     at a given entity or block. Particle names can be found in the
-    [Particle Javadoc](https://papermc.io/javadocs/paper/1.16/index.html?overview-summary.html)
+    [Particle Javadoc](https://papermc.io/javadocs/paper/1.16/org/bukkit/Particle.html)
 
 ### Items
 
